@@ -1,0 +1,128 @@
+@font-face {
+	font-family: 'Cardo';
+	src: url('/fonts/Cardo-Regular.ttf');
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'Cardo';
+	src: url('/fonts/Cardo-Bold.ttf');
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: 'JosefinSans';
+	src: url('/fonts/JosefinSans-Regular.ttf');
+	font-weight: normal;
+}
+
+html {
+	font-family: 'Cardo', serif;
+	font-size: 18px;
+	color: #fff;
+}
+
+html, body {
+	margin: 0;
+}
+
+body {
+	background-image: url('/images/background2.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+	overflow: hidden;
+}
+
+nav {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 1em 2.5em;
+	background: rgba(255, 255, 255, 0.6);
+	z-index: 100;
+	text-align: center;
+	-webkit-transform: translate(0, calc(100% - 20px));
+	        transform: translate(0, calc(100% - 20px));
+	-webkit-transition: transform 0.25s ease;
+	        transition: transform 0.25s ease;
+}
+
+nav.active {
+	-webkit-transform: translate(0, 0);
+	        transform: translate(0, 0);
+}
+
+nav a {
+	display: inline-block;
+	color: #222;
+	margin-right: 3.5em;
+	font-size: 1em;
+	font-family: 'JosefinSans', sans-serif;
+	font-weight: 400;
+	text-decoration: none;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+div.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+/*	background: rgba(255, 255, 255, 0.6);*/
+	padding: 2em;
+    -webkit-transform: translate(-50%, -50%);
+                 transform: translate(-50%, -50%);
+}
+
+h1 {
+	font-family: 'Cardo', serif;
+	font-weight: normal;
+	margin: 0;
+}
+
+h1, h3 {
+	color: rgba(255, 255, 255, 0.7);
+}
+
+h3 {
+	font-family: 'JosefinSans', sans-serif;
+	font-weight: normal;
+}
+
+h1 span {
+	font-family: 'JosefinSans', sans-serif;
+	font-weight: normal;
+	font-size: 0.5em;
+}
+
+#header {
+	cursor: pointer;
+	-webkit-transition: all 0.65s linear;
+			transition: all 0.65s linear;
+}
+
+#header.swipe {
+	-webkit-transform: translate(-100vw, -50%);
+			transform: translate(-100vw, -50%);
+}
+
+strong {
+	font-family: 'Cardo', serif;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+#info {
+	max-width: 26%;
+	cursor: pointer;
+	-webkit-transform: translate(50vw, 50%);
+			transform: translate(50vw, -50%);
+	-webkit-transition: all 0.65s linear;
+			transition: all 0.65s linear;
+}
+
+#info.swipe {
+	-webkit-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+}
