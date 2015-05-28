@@ -1,20 +1,10 @@
-$(document).ready(function() {	
+$(document).ready(function() {
+	$('nav').addClass('active');	
 	$(window).load(function() {
 		$('.centered').addClass('animate');
-		$('nav').addClass('active');
 		setTimeout(function() {
 			$('nav').removeClass('active');
 		}, 2000);
-	});
-	
-	$('#header').click(function() {
-		$(this).addClass('swipe');
-		$('#info').addClass('swipe');
-	});
-	
-	$('#info').click(function() {
-		$('#header').removeClass('swipe');
-		$('#info').removeClass('swipe');
 	});
 
 	$('nav').hover(function() {
